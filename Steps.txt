@@ -1,1 +1,2 @@
 Step 1: Start the application
+Step 2: Close the file
