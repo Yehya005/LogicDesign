@@ -1,0 +1,276 @@
+Simulator report for TR1
+Mon May 12 16:17:16 2025
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 2.0 us       ;
+; Simulation Netlist Size     ; 126 nodes    ;
+; Simulation Coverage         ;      58.95 % ;
+; Total Number of Transitions ; 606          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone      ;
+; Device                      ; EP1C3T100C6  ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      58.95 % ;
+; Total nodes checked                                 ; 126          ;
+; Total output ports checked                          ; 95           ;
+; Total output ports with complete 1/0-value coverage ; 56           ;
+; Total output ports with no 1/0-value coverage       ; 20           ;
+; Total output ports with no 1-value coverage         ; 28           ;
+; Total output ports with no 0-value coverage         ; 31           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                          ;
++---------------------------------------------------------+---------------------------------------------------------+------------------+
+; Node Name                                               ; Output Port Name                                        ; Output Port Type ;
++---------------------------------------------------------+---------------------------------------------------------+------------------+
+; |TR1|inst93~0                                           ; |TR1|inst93~0                                           ; combout          ;
+; |TR1|inst93                                             ; |TR1|inst93                                             ; combout          ;
+; |TR1|inst103~0                                          ; |TR1|inst103~0                                          ; combout          ;
+; |TR1|inst116~0                                          ; |TR1|inst116~0                                          ; combout          ;
+; |TR1|inst145~0                                          ; |TR1|inst145~0                                          ; combout          ;
+; |TR1|74153:inst176|9~4                                  ; |TR1|74153:inst176|9~4                                  ; combout          ;
+; |TR1|inst69~0                                           ; |TR1|inst69~0                                           ; combout          ;
+; |TR1|inst69                                             ; |TR1|inst69                                             ; combout          ;
+; |TR1|74153:inst176|9~6                                  ; |TR1|74153:inst176|9~6                                  ; combout          ;
+; |TR1|74153:inst176|9~7                                  ; |TR1|74153:inst176|9~7                                  ; combout          ;
+; |TR1|74153:inst176|9~8                                  ; |TR1|74153:inst176|9~8                                  ; combout          ;
+; |TR1|74153:inst175|9~1                                  ; |TR1|74153:inst175|9~1                                  ; combout          ;
+; |TR1|inst71                                             ; |TR1|inst71                                             ; combout          ;
+; |TR1|74153:inst175|9~2                                  ; |TR1|74153:inst175|9~2                                  ; combout          ;
+; |TR1|74153:inst175|9~3                                  ; |TR1|74153:inst175|9~3                                  ; combout          ;
+; |TR1|74153:inst177|9~0                                  ; |TR1|74153:inst177|9~0                                  ; combout          ;
+; |TR1|inst70~0                                           ; |TR1|inst70~0                                           ; combout          ;
+; |TR1|inst70                                             ; |TR1|inst70                                             ; combout          ;
+; |TR1|74153:inst177|9~2                                  ; |TR1|74153:inst177|9~2                                  ; combout          ;
+; |TR1|74153:inst177|9~3                                  ; |TR1|74153:inst177|9~3                                  ; combout          ;
+; |TR1|inst80                                             ; |TR1|inst80                                             ; combout          ;
+; |TR1|inst68~0                                           ; |TR1|inst68~0                                           ; combout          ;
+; |TR1|inst68                                             ; |TR1|inst68                                             ; combout          ;
+; |TR1|74153:inst178|9~1                                  ; |TR1|74153:inst178|9~1                                  ; combout          ;
+; |TR1|74153:inst178|9~2                                  ; |TR1|74153:inst178|9~2                                  ; combout          ;
+; |TR1|inst81~0                                           ; |TR1|inst81~0                                           ; combout          ;
+; |TR1|inst92                                             ; |TR1|inst92                                             ; regout           ;
+; |TR1|inst89                                             ; |TR1|inst89                                             ; regout           ;
+; |TR1|inst90                                             ; |TR1|inst90                                             ; regout           ;
+; |TR1|74154:inst|28~0                                    ; |TR1|74154:inst|28~0                                    ; combout          ;
+; |TR1|inst118                                            ; |TR1|inst118                                            ; combout          ;
+; |TR1|74154:inst|28~1                                    ; |TR1|74154:inst|28~1                                    ; combout          ;
+; |TR1|74154:inst|28~3                                    ; |TR1|74154:inst|28~3                                    ; combout          ;
+; |TR1|inst91                                             ; |TR1|inst91                                             ; regout           ;
+; |TR1|FourFPPS:inst128|FlipFlopMemory1:inst6|inst10~0    ; |TR1|FourFPPS:inst128|FlipFlopMemory1:inst6|inst10~0    ; combout          ;
+; |TR1|FourFPPS:inst128|FlipFlopMemory1:inst|inst10~0     ; |TR1|FourFPPS:inst128|FlipFlopMemory1:inst|inst10~0     ; combout          ;
+; |TR1|74154:inst|28~4                                    ; |TR1|74154:inst|28~4                                    ; combout          ;
+; |TR1|FourFPPSOneUse:inst124|FlipFlopMemory1:inst|inst10 ; |TR1|FourFPPSOneUse:inst124|FlipFlopMemory1:inst|inst10 ; regout           ;
+; |TR1|inst75~0                                           ; |TR1|inst75~0                                           ; combout          ;
+; |TR1|74154:inst|28~5                                    ; |TR1|74154:inst|28~5                                    ; combout          ;
+; |TR1|SixFPPSOneUse:inst126|inst10                       ; |TR1|SixFPPSOneUse:inst126|inst10                       ; combout          ;
+; |TR1|74154:inst|28~8                                    ; |TR1|74154:inst|28~8                                    ; combout          ;
+; |TR1|74154:inst|28~9                                    ; |TR1|74154:inst|28~9                                    ; combout          ;
+; |TR1|74154:inst|28~11                                   ; |TR1|74154:inst|28~11                                   ; combout          ;
+; |TR1|74154:inst|28~13                                   ; |TR1|74154:inst|28~13                                   ; combout          ;
+; |TR1|74154:inst|28~14                                   ; |TR1|74154:inst|28~14                                   ; combout          ;
+; |TR1|LED5                                               ; |TR1|LED5                                               ; padio            ;
+; |TR1|LED2                                               ; |TR1|LED2                                               ; padio            ;
+; |TR1|LED4                                               ; |TR1|LED4                                               ; padio            ;
+; |TR1|LED3                                               ; |TR1|LED3                                               ; padio            ;
+; |TR1|LED1                                               ; |TR1|LED1                                               ; padio            ;
+; |TR1|SW4                                                ; |TR1|SW4~corein                                         ; combout          ;
+; |TR1|SW2                                                ; |TR1|SW2~corein                                         ; combout          ;
+; |TR1|SW1                                                ; |TR1|SW1~corein                                         ; combout          ;
+; |TR1|SW3                                                ; |TR1|SW3~corein                                         ; combout          ;
+; |TR1|clkt                                               ; |TR1|clkt~corein                                        ; combout          ;
++---------------------------------------------------------+---------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                               ;
++----------------------------------------------------------+----------------------------------------------------------+------------------+
+; Node Name                                                ; Output Port Name                                         ; Output Port Type ;
++----------------------------------------------------------+----------------------------------------------------------+------------------+
+; |TR1|7448:inst155|6~0                                    ; |TR1|7448:inst155|6~0                                    ; combout          ;
+; |TR1|7448:inst155|6~1                                    ; |TR1|7448:inst155|6~1                                    ; combout          ;
+; |TR1|7448:inst155|66~0                                   ; |TR1|7448:inst155|66~0                                   ; combout          ;
+; |TR1|inst157~0                                           ; |TR1|inst157~0                                           ; combout          ;
+; |TR1|74153:inst176|9~0                                   ; |TR1|74153:inst176|9~0                                   ; combout          ;
+; |TR1|74153:inst176|9~1                                   ; |TR1|74153:inst176|9~1                                   ; combout          ;
+; |TR1|74153:inst176|9~3                                   ; |TR1|74153:inst176|9~3                                   ; combout          ;
+; |TR1|74153:inst176|9~5                                   ; |TR1|74153:inst176|9~5                                   ; combout          ;
+; |TR1|inst84                                              ; |TR1|inst84                                              ; combout          ;
+; |TR1|74153:inst175|9~0                                   ; |TR1|74153:inst175|9~0                                   ; combout          ;
+; |TR1|inst136                                             ; |TR1|inst136                                             ; combout          ;
+; |TR1|74153:inst177|9~1                                   ; |TR1|74153:inst177|9~1                                   ; combout          ;
+; |TR1|74153:inst178|9~0                                   ; |TR1|74153:inst178|9~0                                   ; combout          ;
+; |TR1|74154:inst|28~2                                     ; |TR1|74154:inst|28~2                                     ; combout          ;
+; |TR1|FourFPPS:inst128|FlipFlopMemory1:inst1|inst10~0     ; |TR1|FourFPPS:inst128|FlipFlopMemory1:inst1|inst10~0     ; combout          ;
+; |TR1|FourFPPS:inst128|FlipFlopMemory1:inst2|inst10~0     ; |TR1|FourFPPS:inst128|FlipFlopMemory1:inst2|inst10~0     ; combout          ;
+; |TR1|FourFPPSOneUse:inst124|FlipFlopMemory1:inst1|inst10 ; |TR1|FourFPPSOneUse:inst124|FlipFlopMemory1:inst1|inst10 ; regout           ;
+; |TR1|inst72~0                                            ; |TR1|inst72~0                                            ; combout          ;
+; |TR1|FourFPPSOneUse:inst124|inst4~0                      ; |TR1|FourFPPSOneUse:inst124|inst4~0                      ; combout          ;
+; |TR1|74154:inst|28~6                                     ; |TR1|74154:inst|28~6                                     ; combout          ;
+; |TR1|74154:inst|28~10                                    ; |TR1|74154:inst|28~10                                    ; combout          ;
+; |TR1|74154:inst|28~12                                    ; |TR1|74154:inst|28~12                                    ; combout          ;
+; |TR1|a1                                                  ; |TR1|a1                                                  ; padio            ;
+; |TR1|b1                                                  ; |TR1|b1                                                  ; padio            ;
+; |TR1|c1                                                  ; |TR1|c1                                                  ; padio            ;
+; |TR1|d1                                                  ; |TR1|d1                                                  ; padio            ;
+; |TR1|e1                                                  ; |TR1|e1                                                  ; padio            ;
+; |TR1|f1                                                  ; |TR1|f1                                                  ; padio            ;
++----------------------------------------------------------+----------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                               ;
++----------------------------------------------------------+----------------------------------------------------------+------------------+
+; Node Name                                                ; Output Port Name                                         ; Output Port Type ;
++----------------------------------------------------------+----------------------------------------------------------+------------------+
+; |TR1|7448:inst155|6~0                                    ; |TR1|7448:inst155|6~0                                    ; combout          ;
+; |TR1|7448:inst155|66~0                                   ; |TR1|7448:inst155|66~0                                   ; combout          ;
+; |TR1|7448:inst155|66~1                                   ; |TR1|7448:inst155|66~1                                   ; combout          ;
+; |TR1|74153:inst176|9~0                                   ; |TR1|74153:inst176|9~0                                   ; combout          ;
+; |TR1|74153:inst176|9~1                                   ; |TR1|74153:inst176|9~1                                   ; combout          ;
+; |TR1|74153:inst176|9~2                                   ; |TR1|74153:inst176|9~2                                   ; combout          ;
+; |TR1|74153:inst176|9~3                                   ; |TR1|74153:inst176|9~3                                   ; combout          ;
+; |TR1|inst84                                              ; |TR1|inst84                                              ; combout          ;
+; |TR1|inst121~0                                           ; |TR1|inst121~0                                           ; combout          ;
+; |TR1|74153:inst175|9~0                                   ; |TR1|74153:inst175|9~0                                   ; combout          ;
+; |TR1|inst136                                             ; |TR1|inst136                                             ; combout          ;
+; |TR1|inst71~0                                            ; |TR1|inst71~0                                            ; combout          ;
+; |TR1|inst104                                             ; |TR1|inst104                                             ; combout          ;
+; |TR1|74153:inst177|9~1                                   ; |TR1|74153:inst177|9~1                                   ; combout          ;
+; |TR1|74153:inst178|9~0                                   ; |TR1|74153:inst178|9~0                                   ; combout          ;
+; |TR1|74154:inst|28~2                                     ; |TR1|74154:inst|28~2                                     ; combout          ;
+; |TR1|FourFPPS:inst128|FlipFlopMemory1:inst2|inst10~0     ; |TR1|FourFPPS:inst128|FlipFlopMemory1:inst2|inst10~0     ; combout          ;
+; |TR1|FourFPPSOneUse:inst124|FlipFlopMemory1:inst6|inst10 ; |TR1|FourFPPSOneUse:inst124|FlipFlopMemory1:inst6|inst10 ; regout           ;
+; |TR1|FourFPPSOneUse:inst124|FlipFlopMemory1:inst1|inst10 ; |TR1|FourFPPSOneUse:inst124|FlipFlopMemory1:inst1|inst10 ; regout           ;
+; |TR1|74154:inst|28~6                                     ; |TR1|74154:inst|28~6                                     ; combout          ;
+; |TR1|74154:inst|28~7                                     ; |TR1|74154:inst|28~7                                     ; combout          ;
+; |TR1|74154:inst|28~10                                    ; |TR1|74154:inst|28~10                                    ; combout          ;
+; |TR1|74154:inst|28~12                                    ; |TR1|74154:inst|28~12                                    ; combout          ;
+; |TR1|a1                                                  ; |TR1|a1                                                  ; padio            ;
+; |TR1|b1                                                  ; |TR1|b1                                                  ; padio            ;
+; |TR1|d1                                                  ; |TR1|d1                                                  ; padio            ;
+; |TR1|e1                                                  ; |TR1|e1                                                  ; padio            ;
+; |TR1|g1                                                  ; |TR1|g1                                                  ; padio            ;
+; |TR1|Test1                                               ; |TR1|Test1                                               ; padio            ;
+; |TR1|Reset1                                              ; |TR1|Reset1~corein                                       ; combout          ;
+; |TR1|raset                                               ; |TR1|raset~corein                                        ; combout          ;
++----------------------------------------------------------+----------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Mon May 12 16:17:16 2025
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off TR1 -c TR1
+Info: Using vector source file "C:/altera/91sp2/quartus/TR1.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      58.95 %
+Info: Number of transitions in simulation is 606
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 163 megabytes
+    Info: Processing ended: Mon May 12 16:17:16 2025
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+
