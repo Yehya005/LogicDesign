@@ -1,2 +1,2 @@
-Step 1: Start the application
-Step 2: Close the file
+Step 1: Open Folder Quartus Files
+Step 2: Open TR1.qpf for main block
